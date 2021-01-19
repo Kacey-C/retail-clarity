@@ -1,0 +1,125 @@
+/*
+ Theme Name:  Divi Child Theme
+ Theme URI:    https://retailclarity.com
+ Description:  Child Theme for Divi
+ Author:       Kacey Willis
+ Author URI:   https://kaceycreative.com
+ Template:     Divi
+ Version:      1.0.0
+*/
+
+/*****Add any custom CSS below this line*****/
+
+/* MAIN STYLES */
+html {
+    font-size: 16px;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+b,
+strong {
+   font-weight: bold;
+   font-weight: 700;
+}
+dfn,
+cite,
+em,
+i {
+   font-style: italic;
+}
+p {
+   color: #1B1611;
+   font: 1rem 'Montserrat', 'Open Sans', Arial, sans-serif;
+   margin: 1rem auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 1.4em 0 .5em;
+   font: 700 1em/1.75 'Prompt', 'Open Sans', Arial, sans-serif;
+}
+h1 {
+   font-size: 3rem;
+   line-height: 2.25;
+}
+h2 {
+   font-size: 36px;
+   font-size: 2.25rem;
+   line-height: 2.25rem;
+}
+h3 {
+   font-size: 24px;
+   font-size: 1.5rem;
+   line-height: 1.75;
+   font-weight: 500;
+}
+h4 {
+	font-size: 16px;
+    font-size: 1em;
+    font-weight: 500;
+}
+ h5 {
+	 font-size: 16px;
+	 font-size: 1em;
+     text-transform: uppercase;
+     font-weight: 500;
+}
+
+}
+/* End MAIN STYLES */
+
+/* Body Styles */
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+}
+body {
+   background: #fff;
+   color: #1B1611;
+   font: 1rem 'Montserrat', 'Open Sans', Arial, sans-serif;
+   height: auto;
+}
+/* End BODY STYLES */
+
+/* Header & Menu */
+
+
+/* Homepage */
+
+.home-top {
+    display: flex;
+    align-items: flex-start;
+}
+
+.home-data-content h1,
+.home-data-content h3 {
+    margin-top: 1rem;
+}
+
+.home-data-content h1 {
+    font-size: 2.75rem;
+    color: #1B1611;
+}
+
+.less-space h1 {
+    margin-bottom: 0;
+
+}
+.less-space h3 {
+    margin-top: 1rem;
+}
+
+/*place button modules next to each other in the same column*/
+.header-buttons .et_pb_button_module_wrapper {
+    display: inline-block;
+}
+
