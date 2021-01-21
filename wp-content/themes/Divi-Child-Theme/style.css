@@ -71,7 +71,6 @@ h4 {
      font-weight: 500;
 }
 
-}
 /* End MAIN STYLES */
 
 /* Body Styles */
@@ -83,43 +82,92 @@ body {
    margin: 0;
 }
 body {
-   background: #fff;
    color: #1B1611;
    font: 1rem 'Montserrat', 'Open Sans', Arial, sans-serif;
    height: auto;
 }
+
+/*place button modules next to each other in the same column*/
+.pa-inline-buttons .et_pb_button_module_wrapper {
+   display: inline-block;
+}
+
 /* End BODY STYLES */
 
 /* Header & Menu */
 
+.menu {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
 /* Homepage */
 
-.home-top {
-    display: flex;
-    align-items: flex-start;
+.home-header {
+   display: flex;
+   align-items: center;
 }
 
-.home-data-content h1,
-.home-data-content h3 {
-    margin-top: 1rem;
+.home-data-blurb p,
+.home-signup p {
+   color: #ffffff;
+   font-size: 1.25rem;
 }
 
-.home-data-content h1 {
-    font-size: 2.75rem;
-    color: #1B1611;
+/* End HOMEPAGE */
+
+/* Coaching Landing */
+
+@media (min-width: 980px){
+#coaching-head,
+.coaching-service-cta {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
 }
 
-.less-space h1 {
-    margin-bottom: 0;
-
+.coaching-product-button {
+   width: 40%;
+   
 }
-.less-space h3 {
-    margin-top: 1rem;
 }
 
-/*place button modules next to each other in the same column*/
-.header-buttons .et_pb_button_module_wrapper {
-    display: inline-block;
+.coaching-about,
+.coaching-download {
+   display: flex;
+   align-items: center;
 }
 
+.coaching-about h2 {
+   line-height: 2.5rem;
+}
+
+/*skinny email signup*/
+@media (min-width: 980px){
+#skinny.et_pb_newsletter .et_pb_newsletter_fields {
+  flex-wrap: nowrap !important;
+}
+#skinny.et_pb_newsletter .et_pb_newsletter_fields>* {
+  flex-basis: 23%;
+}
+ 
+#skinny .et_pb_newsletter_form {
+  padding-left: 0px;
+} 
+}
+/*end skinny email signup */
+
+.coaching-download h2,
+.coaching-download p,
+#coaching-cta h3 {
+   color: #ffffff;
+}
+
+#coaching-cta,
+.coaching-service-cta,
+.coaching-latest-news {
+   display: flex;
+   align-items: center;
+}
