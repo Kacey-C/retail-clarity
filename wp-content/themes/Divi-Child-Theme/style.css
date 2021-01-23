@@ -92,6 +92,14 @@ body {
    display: inline-block;
 }
 
+/* Bottom Align Buttons in Column */
+.bottom-align-buttons .et_pb_column 
+{ 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:space-between;
+}
+
 /* End BODY STYLES */
 
 /* Header & Menu */
@@ -166,8 +174,21 @@ body {
 }
 
 #coaching-cta,
-.coaching-service-cta,
 .coaching-latest-news {
    display: flex;
    align-items: center;
 }
+
+.coaching-service-cta,
+.coaching-download,
+#coaching-cta {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+@media (max-width: 980) {
+   .pa-inline-buttons .et_pb_button_module_wrapper {
+      justify-content: center;
+}
+}
+
