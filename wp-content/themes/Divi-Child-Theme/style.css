@@ -192,3 +192,14 @@ body {
 }
 }
 
+/* Blog Post Single */
+
+.blog-post-text .et_pb_post_content p {
+   font-size: 1.2rem;
+}
+
+.et_pb_post_content_0_tb_body blockquote {
+
+}
+
+/* End BLOG POST SINGLE */
