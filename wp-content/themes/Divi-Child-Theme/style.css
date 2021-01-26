@@ -173,10 +173,15 @@ body {
    color: #ffffff;
 }
 
-#coaching-cta,
-.coaching-latest-news {
+#coaching-cta {
    display: flex;
    align-items: center;
+}
+
+.coaching-latest-news {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
 }
 
 .coaching-service-cta,
@@ -192,6 +197,64 @@ body {
 }
 }
 
+/* end COACHING HOMEPAGE */
+
+/* Coaching Products */
+.coaching-products-head {
+   display: flex;
+   align-items: center;
+}
+/* right align events img */
+.coaching-events .et_pb_posts .et_pb_post a img, 
+.coaching-events .archive .et_pb_post a img, 
+.coaching-events .search .et_pb_post a img {
+        max-width: 200px!important;
+        float: right;
+        margin-left: 200px;
+}
+
+@media only screen and (max-width: 980px) {
+   .coaching-events.et_pb_posts .et_pb_post a img, 
+   .coaching-events .archive .et_pb_post a img, 
+   .coaching-events .search .et_pb_post a img{
+        float:none;
+        max-width: 200px!important;}}
+/* end right align */
+
+.coaching-event {
+   display: flex;
+   align-items: center;
+}
+
+.coaching-product-questions p,
+.tip-of-week-signup p {
+   color: #ffffff;
+   font-size: 1.2rem;
+}
+
+
+/* end COACHING PRODUCTS */
+
+/* Blog Overview Page */
+
+/* right-align blog imgs */ 
+.blog-overview .et_pb_posts .et_pb_post a img, 
+.blog-overview .archive .et_pb_post a img, 
+.blog-overview .search .et_pb_post a img {
+        max-width: 400px!important;
+        float: right;
+        margin-left: 50px;
+}
+
+@media only screen and (max-width: 980px) {
+   .blog-overview .et_pb_posts .et_pb_post a img, 
+   .blog-overview .archive .et_pb_post a img, 
+   .blog-overview .search .et_pb_post a img{
+        float:none;
+        max-width: 250px!important;}}
+
+/* end BLOG OVERVIEW PAGE */
+
 /* Blog Post Single */
 
 .blog-post-text .et_pb_post_content p {
@@ -200,6 +263,11 @@ body {
 
 .et_pb_post_content_0_tb_body blockquote {
 
+}
+
+.blog-author-bio {
+   display:flex;
+   align-items: center;
 }
 
 /* End BLOG POST SINGLE */
