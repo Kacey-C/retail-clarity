@@ -173,6 +173,17 @@ body {
    color: #ffffff;
 }
 
+.testimonials h5 {
+   text-transform: none;
+   text-shadow: none;
+   font-weight: 500;
+}
+
+.testimonials p {
+   text-shadow: none;
+   font-size: 1rem;
+}
+
 #coaching-cta {
    display: flex;
    align-items: center;
@@ -271,3 +282,21 @@ body {
 }
 
 /* End BLOG POST SINGLE */
+
+/* Contact Us */
+
+.contact-us-head p {
+   color: #ffffff;
+   font-size: 1.2rem;
+}
+
+/* end CONTACT US */
+/* About Us */
+
+.who-we-are {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+/* end ABOUT US */
