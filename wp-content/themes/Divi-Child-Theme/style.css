@@ -87,12 +87,12 @@ body {
    height: auto;
 }
 
-/*place button modules next to each other in the same column*/
+   /*place button modules next to each other in the same column*/
 .pa-inline-buttons .et_pb_button_module_wrapper {
    display: inline-block;
 }
 
-/* Bottom Align Buttons in Column */
+   /* Bottom Align Buttons in Column */
 .bottom-align-buttons .et_pb_column 
 { 
     display:flex; 
@@ -115,6 +115,7 @@ body {
 .home-header {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .home-data-blurb p,
@@ -152,7 +153,7 @@ body {
    line-height: 2.5rem;
 }
 
-/*skinny email signup*/
+   /*skinny email signup*/
 @media (min-width: 980px){
 #skinny.et_pb_newsletter .et_pb_newsletter_fields {
   flex-wrap: nowrap !important;
@@ -165,7 +166,7 @@ body {
   padding-left: 0px;
 } 
 }
-/*end skinny email signup */
+   /*end skinny email signup */
 
 .coaching-download h2,
 .coaching-download p,
@@ -214,8 +215,9 @@ body {
 .coaching-products-head {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 }
-/* right align events img */
+   /* right align events img */
 .coaching-events .et_pb_posts .et_pb_post a img, 
 .coaching-events .archive .et_pb_post a img, 
 .coaching-events .search .et_pb_post a img {
@@ -225,16 +227,22 @@ body {
 }
 
 @media only screen and (max-width: 980px) {
-   .coaching-events.et_pb_posts .et_pb_post a img, 
+   .coaching-events .et_pb_posts .et_pb_post a img, 
    .coaching-events .archive .et_pb_post a img, 
    .coaching-events .search .et_pb_post a img{
         float:none;
-        max-width: 200px!important;}}
-/* end right align */
+        max-width: 200px!important;
+        margin-left: 0;}}
+   /* end right align */
 
-.coaching-event {
+#skinny-whizbang .et_pb_signup_custom_field {
+   flex-basis: 100%;
+}
+
+.coaching-products {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .coaching-product-questions p,
@@ -248,7 +256,7 @@ body {
 
 /* Blog Overview Page */
 
-/* right-align blog imgs */ 
+   /* right-align blog imgs */ 
 .blog-overview .et_pb_posts .et_pb_post a img, 
 .blog-overview .archive .et_pb_post a img, 
 .blog-overview .search .et_pb_post a img {
@@ -272,13 +280,21 @@ body {
    font-size: 1.2rem;
 }
 
-.et_pb_post_content_0_tb_body blockquote {
-
+   /* indenting lists */
+.entry-content ol, .entry-content ul {
+   padding: 30px 0px 30px 50px;
+   list-style-position: outside;
 }
+
+.entry-content ol li, .entry-content ul li {
+   margin-bottom: 10px;
+}
+   /* end indenting lists */
 
 .blog-author-bio {
    display:flex;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 /* End BLOG POST SINGLE */
