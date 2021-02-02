@@ -12,7 +12,7 @@
 
 /* MAIN STYLES */
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
@@ -34,6 +34,7 @@ p {
    color: #1B1611;
    font: 1rem 'Montserrat', 'Open Sans', Arial, sans-serif;
    margin: 1rem auto;
+   line-height: 31px;
 }
 h1,
 h2,
@@ -60,15 +61,15 @@ h3 {
    font-weight: 500;
 }
 h4 {
-	font-size: 16px;
-    font-size: 1em;
-    font-weight: 500;
+	font-size: 18px;
+   font-size: 1em;
+   font-weight: 500;
 }
  h5 {
-	 font-size: 16px;
-	 font-size: 1em;
-     text-transform: uppercase;
-     font-weight: 500;
+	font-size: 18px;
+	font-size: 1em;
+   text-transform: uppercase;
+   font-weight: 500;
 }
 
 /* End MAIN STYLES */
@@ -143,7 +144,11 @@ body {
 }
 }
 
-.coaching-about,
+.coaching-about {
+   display: flex;
+   align-items: flex-start;
+}
+
 .coaching-download {
    display: flex;
    align-items: center;
@@ -168,6 +173,11 @@ body {
 }
    /*end skinny email signup */
 
+#coaching-services-header p {
+   font-size: 1.2rem;
+   line-height: 38px;
+}
+
 .coaching-download h2,
 .coaching-download p,
 #coaching-cta h3 {
@@ -190,7 +200,26 @@ body {
    align-items: center;
 }
 
-.coaching-latest-news {
+   /* right align events img */
+   .coaching-events-landing .et_pb_posts .et_pb_post a img, 
+   .coaching-events-landing .archive .et_pb_post a img, 
+   .coaching-events-landing .search .et_pb_post a img {
+           max-width: 250px!important;
+           float: right;
+           margin-left: 180px;
+   }
+   
+   @media only screen and (max-width: 980px) {
+      .coaching-events-landing .et_pb_posts .et_pb_post a img, 
+      .coaching-events-landing .archive .et_pb_post a img, 
+      .coaching-events-landing .search .et_pb_post a img{
+           float:none;
+           max-width: 200px!important;
+           margin-left: 0;}}
+      /* end right align */
+
+.coaching-latest-news,
+.coaching-about {
    display: flex;
    align-items: flex-start;
    flex-wrap: wrap;
@@ -290,7 +319,7 @@ body {
    margin-bottom: 10px;
 }
    /* end indenting lists */
-
+ß
 .blog-author-bio {
    display:flex;
    align-items: center;
