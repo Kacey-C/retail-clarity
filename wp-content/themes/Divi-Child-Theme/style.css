@@ -127,6 +127,20 @@ body {
 
 /* End HOMEPAGE */
 
+/* RC Analytix Landing */
+
+.analytix-landing-info p,
+.analytix-landing-cta p {
+   color: #ffffff;
+}
+
+.analytix-landing-cta {
+   display: flex;
+   align-items: center;
+}
+
+/* end RC ANALYTIX LANDING */
+
 /* Coaching Landing */
 
 @media (min-width: 980px){
