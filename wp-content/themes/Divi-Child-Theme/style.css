@@ -139,7 +139,9 @@ body {
 .analytix-product-description {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 }
+
 
 /* end RC ANALYTIX LANDING */
 
@@ -190,7 +192,7 @@ body {
    /*end skinny email signup */
 
 #coaching-services-header p {
-   font-size: 1.2rem;
+   font-size: 1rem;
    line-height: 38px;
 }
 
