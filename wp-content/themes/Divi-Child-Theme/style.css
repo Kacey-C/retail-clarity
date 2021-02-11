@@ -111,6 +111,11 @@ body {
    justify-content: space-between;
 }
 
+.footer p {
+   color: #ffffff;
+   font-size: .75rem;
+}
+
 /* Homepage */
 
 .home-header {
@@ -131,12 +136,14 @@ body {
 
 .analytix-landing-info p,
 .analytix-landing-cta p,
-.analytix-landing-head p {
+.analytix-landing-head p,
+.analytix-plan-cta p {
    color: #ffffff;
 }
 
 .analytix-landing-cta,
-.analytix-product-description {
+.analytix-product-description,
+.analytix-landing-cta {
    display: flex;
    align-items: center;
    flex-wrap: wrap;
@@ -164,10 +171,10 @@ body {
 
 .coaching-about {
    display: flex;
-   align-items: flex-start;
+   align-items: center;
 }
 
-.coaching-download {
+.coaching-plan-cta {
    display: flex;
    align-items: center;
 }
@@ -202,8 +209,8 @@ body {
    flex-wrap: wrap;
 }
 
-.coaching-download h2,
-.coaching-download p,
+.coaching-plan-cta h2,
+.coaching-plan-cta p,
 #coaching-cta h3 {
    color: #ffffff;
 }
@@ -243,14 +250,15 @@ body {
       /* end right align */
 
 .coaching-latest-news,
-.coaching-about {
+.coaching-about,
+.coaching-bottom-cta {
    display: flex;
-   align-items: flex-start;
+   align-items: center;
    flex-wrap: wrap;
 }
 
 .coaching-service-cta,
-.coaching-download,
+.coaching-plan-cta,
 #coaching-cta {
    display: flex;
    flex-wrap: wrap;
@@ -261,6 +269,8 @@ body {
       justify-content: center;
 }
 }
+
+
 
 /* end COACHING HOMEPAGE */
 
