@@ -118,12 +118,15 @@ body {
 
 /* Homepage */
 
-.home-header {
+.home-header,
+.home-data-blurb,
+.home-bottom {
    display: flex;
    align-items: center;
    flex-wrap: wrap;
 }
 
+.home-header p,
 .home-data-blurb p,
 .home-signup p {
    color: #ffffff;
@@ -141,6 +144,7 @@ body {
    color: #ffffff;
 }
 
+.analytix-landing-head,
 .analytix-landing-cta,
 .analytix-product-description,
 .analytix-landing-cta {
@@ -387,6 +391,7 @@ body {
 /* end CONTACT US */
 /* About Us */
 
+.about-story,
 .who-we-are {
    display: flex;
    align-items: center;
