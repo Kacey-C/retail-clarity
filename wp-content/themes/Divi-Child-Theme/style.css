@@ -158,64 +158,29 @@ body {
 
 /* Coaching Landing */
 
-@media (min-width: 980px){
-#coaching-head,
+.coaching-head,
+.coaching-about,
+.coaching-plan-cta,
+.coaching-services-header,
+.coaching-bottom-cta,
 .coaching-service-cta {
    display: flex;
-   flex-direction: row;
    align-items: center;
-   justify-content: space-around;
-}
-
-.coaching-product-button {
-   width: 40%;
-   
-}
-}
-
-.coaching-about {
-   display: flex;
-   align-items: center;
-}
-
-.coaching-plan-cta {
-   display: flex;
-   align-items: center;
+   flex-wrap: wrap;
 }
 
 .coaching-about h2 {
    line-height: 2.5rem;
 }
 
-   /*skinny email signup*/
-@media (min-width: 980px){
-#skinny.et_pb_newsletter .et_pb_newsletter_fields {
-  flex-wrap: nowrap !important;
-}
-#skinny.et_pb_newsletter .et_pb_newsletter_fields>* {
-  flex-basis: 23%;
-}
- 
-#skinny .et_pb_newsletter_form {
-  padding-left: 0px;
-} 
-}
-   /*end skinny email signup */
-
-#coaching-services-header p {
+.coaching-services-header p {
    font-size: 1rem;
    line-height: 38px;
 }
 
-#coaching-services-header {
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-}
-
 .coaching-plan-cta h2,
-.coaching-plan-cta p,
-#coaching-cta h3 {
+.coaching-plan-steps p,
+.coaching-bottom-cta p {
    color: #ffffff;
 }
 
@@ -230,10 +195,20 @@ body {
    font-size: 1rem;
 }
 
-#coaching-cta {
-   display: flex;
-   align-items: center;
-}
+   /*skinny email signup*/
+   @media (min-width: 980px){
+      #skinny.et_pb_newsletter .et_pb_newsletter_fields {
+        flex-wrap: nowrap !important;
+      }
+      #skinny.et_pb_newsletter .et_pb_newsletter_fields>* {
+        flex-basis: 23%;
+      }
+       
+      #skinny .et_pb_newsletter_form {
+        padding-left: 0px;
+      } 
+      }
+   /*end skinny email signup */
 
    /* right align events img */
    .coaching-events-landing .et_pb_posts .et_pb_post a img, 
@@ -253,28 +228,11 @@ body {
            margin-left: 0;}}
       /* end right align */
 
-.coaching-latest-news,
-.coaching-about,
-.coaching-bottom-cta {
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-}
-
-.coaching-service-cta,
-.coaching-plan-cta,
-#coaching-cta {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-@media (max-width: 980) {
+@media (max-width: 980px) {
    .pa-inline-buttons .et_pb_button_module_wrapper {
       justify-content: center;
 }
 }
-
-
 
 /* end COACHING HOMEPAGE */
 
