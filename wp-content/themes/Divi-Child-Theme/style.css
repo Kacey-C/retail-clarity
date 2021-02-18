@@ -116,6 +116,11 @@ body {
    font-size: .75rem;
 }
 
+.footer-copyright p {
+   color: #d9d9d9;
+   font-size: .5rem;
+}
+
 /* Homepage */
 
 .home-header,
@@ -156,6 +161,24 @@ body {
 
 /* end RC ANALYTIX LANDING */
 
+/* RC Analytix Reseller */
+
+.reseller-head {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.reseller-head p {
+   color: #ffffff;
+   font-size: 1.25rem;
+}
+
+
+
+
+/* end RC ANALYTIX RESELLER */
+
 /* Coaching Landing */
 
 .coaching-head,
@@ -179,6 +202,7 @@ body {
 }
 
 .coaching-plan-cta h2,
+.coaching-plan-cta p,
 .coaching-plan-steps p,
 .coaching-bottom-cta p {
    color: #ffffff;
